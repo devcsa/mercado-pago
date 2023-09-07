@@ -193,11 +193,12 @@ function updatePrice() {
    let unitPrice = document.getElementById("unit-price").innerText;
    let amount = parseInt(unitPrice) * parseInt(quantity);
 
-   document.getElementById("cart-total").innerText = "$ " + amount;
-   document.getElementById("summary-price").innerText = "$ " + unitPrice;
+   document.getElementById("cart-total").innerText = amount.toLocaleString("pt-br", { style: "currency", currency: "brl" });
+   document.getElementById("summary-price").innerText = "R$ " + unitPrice;
    document.getElementById("summary-quantity").innerText = quantity;
-   document.getElementById("summary-total").innerText = "$ " + amount;
+   document.getElementById("summary-total").innerText = amount.toLocaleString("pt-br", { style: "currency", currency: "brl" });
    document.getElementById("amount").value = amount;
+   console.log(amount);
 }
 
 document.getElementById("quantity").addEventListener("change", updatePrice);

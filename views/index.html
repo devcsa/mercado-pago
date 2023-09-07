@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>Integration Example - Card Payment</title>
+      <title>Pagamento</title>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
@@ -72,7 +72,7 @@
                </div>
                <div class="form-payment">
                   <div class="products">
-                     <h2 class="title">Total</h2>
+                     <h2 class="title">Itens</h2>
                      <div class="item">
                         <span class="price" id="summary-price"></span>
                         <p class="item-name">Livro x <span id="summary-quantity"></span></p>
@@ -84,7 +84,7 @@
                         <h3 class="title">Detalhes do Comprador</h3>
                         <div class="row">
                            <div class="form-group col">
-                              <input id="form-checkout__cardholderEmail" name="cardholderEmail" type="email" class="form-control" />
+                              <input id="form-checkout__cardholderEmail" name="cardholderEmail" type="email" class="form-control" required />
                            </div>
                         </div>
                         <div class="row">
@@ -180,10 +180,10 @@
          </section>
       </main>
       <footer>
-         <div class="footer_logo"><img id="horizontal_logo" src="img/horizontal_logo.png" /></div>
+         <div class="footer_logo"><img id="horizontal_logo" src="img/logo.png" /></div>
          <div class="footer_text">
             <p>Desenvolvido por:</p>
-            <p><a href="https://www.csahost.com.br/">https://www.csahost.com.br/</a></p>
+            <p><a href="https://www.csadev.com.br/">https://www.csadev.com.br/</a></p>
          </div>
       </footer>
    </body>
