@@ -35,7 +35,7 @@ app.use(express.static("./static"));
 app.use(express.json());
 
 app.get("/", function (req, res) {
-   res.status(200).render("index", { mercadoPagoPublicKey });
+   res.status(200).render("payment", { mercadoPagoPublicKey });
 });
 
 app.post("/process_payment", (req, res) => {

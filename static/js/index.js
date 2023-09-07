@@ -11,7 +11,7 @@ function loadCardForm() {
       id: "form-checkout",
       cardholderName: {
          id: "form-checkout__cardholderName",
-         placeholder: "Holder name",
+         placeholder: "Nome no cartão",
       },
       cardholderEmail: {
          id: "form-checkout__cardholderEmail",
@@ -19,35 +19,35 @@ function loadCardForm() {
       },
       cardNumber: {
          id: "form-checkout__cardNumber",
-         placeholder: "Card number",
+         placeholder: "Número do cartão",
          style: {
             fontSize: "1rem",
          },
       },
       expirationDate: {
          id: "form-checkout__expirationDate",
-         placeholder: "MM/YYYY",
+         placeholder: "MM/AAAA",
          style: {
             fontSize: "1rem",
          },
       },
       securityCode: {
          id: "form-checkout__securityCode",
-         placeholder: "Security code",
+         placeholder: "CVV",
          style: {
             fontSize: "1rem",
          },
       },
       installments: {
          id: "form-checkout__installments",
-         placeholder: "Installments",
+         placeholder: "Parcelas",
       },
       identificationType: {
          id: "form-checkout__identificationType",
       },
       identificationNumber: {
          id: "form-checkout__identificationNumber",
-         placeholder: "Identification number",
+         placeholder: "Número documento",
       },
       issuer: {
          id: "form-checkout__issuer",
