@@ -10,14 +10,14 @@ const express = require("express");
 const mercadopago = require("mercadopago");
 
 const mercadoPagoPublicKey = process.env.MERCADO_PAGO_SAMPLE_PUBLIC_KEY;
-//const mercadoPagoPublicKey = "TEST-b1098b45-6fe4-46dc-aa0d-241a66399709";
+
 if (!mercadoPagoPublicKey) {
    console.log("Error: public key not defined");
    process.exit(1);
 }
 
 const mercadoPagoAccessToken = process.env.MERCADO_PAGO_SAMPLE_ACCESS_TOKEN;
-//const mercadoPagoAccessToken = "TEST-4351684889396672-090520-e28b075a4349b579c9b6c92926445fee-1471627068";
+
 if (!mercadoPagoAccessToken) {
    console.log("Error: access token not defined");
    process.exit(1);
