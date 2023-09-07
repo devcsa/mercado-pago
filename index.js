@@ -1,8 +1,7 @@
 require("dotenv").config();
 
-console.log("PUBLIC KEY", process.env.MERCADO_PAGO_SAMPLE_PUBLIC_KEY);
-
-console.log("ACCESS TOKEN", process.env.MERCADO_PAGO_SAMPLE_ACCESS_TOKEN);
+// console.log("PUBLIC KEY", process.env.MERCADO_PAGO_SAMPLE_PUBLIC_KEY);
+// console.log("ACCESS TOKEN", process.env.MERCADO_PAGO_SAMPLE_ACCESS_TOKEN);
 
 const open = require("open");
 const path = require("path");
@@ -12,14 +11,14 @@ const mercadopago = require("mercadopago");
 const mercadoPagoPublicKey = process.env.MERCADO_PAGO_SAMPLE_PUBLIC_KEY;
 
 if (!mercadoPagoPublicKey) {
-   console.log("Error: public key not defined");
+   console.log("Erro: PUBLIC KEY não definida");
    process.exit(1);
 }
 
 const mercadoPagoAccessToken = process.env.MERCADO_PAGO_SAMPLE_ACCESS_TOKEN;
 
 if (!mercadoPagoAccessToken) {
-   console.log("Error: access token not defined");
+   console.log("Erro: ACCESS TOKEN não definido");
    process.exit(1);
 }
 
@@ -92,6 +91,6 @@ function validateError(error) {
 }
 
 app.listen(8080, () => {
-   console.log("The server is now running on port 8080");
+   console.log("Servidor rodando na porta: 8080");
    open("http://localhost:8080");
 });
