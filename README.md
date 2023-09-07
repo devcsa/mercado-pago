@@ -1,59 +1,61 @@
-# Card payment processing with Checkout API
+# Processamento de pagamento com cartão via Checkout Transparente
 
-[Português](README.pt.md) / [Español](README.es.md)
+## :computer: Tecnologias
 
-## :computer: Technologies
+-  Node.js
+-  [NPM](https://www.npmjs.com) (dependency manager)
+-  Express
 
-- Node.js
-- [NPM](https://www.npmjs.com) (dependency manager)
-- Express
+## 💡 Requisitos
 
-## 💡 Requirements
+-  Node.js 10 ou mais recente (você pode baixar [aqui](https://nodejs.org/)).
+-  [Leia nossas instruções](https://www.mercadopago.com/developers/pt/guides/overview#bookmark_el_desarrollo_con_c%C3%B3digo) sobre como criar uma aplicação no Painel de Desenvolvedores do Mercado Pago para obter a public key e o access token. Essas chaves irão te dar acesso às APIs do Mercado Pago.
 
-- Node.js 10 or higher (you can download it [here](https://nodejs.org/)).
-- [Read our instructions](https://www.mercadopago.com/developers/en/guides/overview#bookmark_el_desarrollo_con_c%C3%B3digo) on how to create an application at the Mercado Pago Developer Panel in order to acquire your public key and access token. They will grant you access to Mercado Pago's public APIs.
+## :gear: Instalação
 
-## :gear: Installation
-
-1. Clone the project.
+1. Clone o projeto.
 
 ```bash
-git clone https://github.com/mercadopago/card-payment-sample-node.git
+git clone https://github.com/devcsa/mercado-pago.git
 ```
 
-2. Go to the project's folder.
+2. Acesse a pasta raiz do projeto.
 
 ```bash
-cd card-payment-sample-node
+cd mercado-pago
 ```
 
-3. Then install the dependencies.
+3. Instale as dependências necessárias.
 
 ```bash
 npm install
 ```
 
-## 🌟 How to run it
+## 🌟 Como executar
 
-1. Run the following command to start the application:
+1. Crie o arquivo de variávies de ambiente ".env"
+2. Adicione suas credenciais:-bash
 
 ```bash
-MERCADO_PAGO_SAMPLE_PUBLIC_KEY=YOUR_PUBLIC_KEY MERCADO_PAGO_SAMPLE_ACCESS_TOKEN=YOUR_ACCESS_TOKEN npm start
-``` 
+  MERCADO_PAGO_SAMPLE_PUBLIC_KEY=YOUR_PUBLIC_KEY
+  MERCADO_PAGO_SAMPLE_ACCESS_TOKEN=YOUR_ACCESS_TOKEN
+```
 
-2. Remember to replace the values of `YOUR_PUBLIC_KEY` and `YOUR_ACCESS_TOKEN` with the corresponding [credentials](https://www.mercadopago.com/developers/panel) from your account.
+3. No terminal, inicie a aplicação
 
-3. Navigate to [http://localhost:8080](http://localhost:8080) in your browser.
+```bash
+  npm start
+```
 
-### :test_tube: Testing
+2. Lembre-se de trocar os valores `YOUR_PUBLIC_KEY` e `YOUR_ACCESS_TOKEN` pelas [credenciais](https://www.mercadopago.com/developers/panel) da sua conta.
 
-On our [testing instructions](https://www.mercadopago.com/developers/en/guides/online-payments/checkout-api/testing) you'll find **[credit cards](https://www.mercadopago.com/developers/en/guides/online-payments/checkout-api/testing#bookmark_test_cards)** that can be used along with this sample and a guide on how to create **[test users](https://www.mercadopago.com/developers/en/guides/online-payments/checkout-api/testing#bookmark_how_to_create_users)**.
+3. Acesse [http://localhost:8080](http://localhost:8080) em seu navegador.
 
-## :handshake: Contributing
+### :test_tube: Testes
 
-You can contribute to this project by reporting problems and bugs. Before opening an issue, make sure to read our [code of conduct](CODE_OF_CONDUCT.md).
+Em nossas [instruções de teste](https://www.mercadopago.com/developers/pt/guides/online-payments/checkout-api/testing) você irá encontrar **[cartões de crédito](https://www.mercadopago.com/developers/pt/guides/online-payments/checkout-api/testing#bookmark_cart%C3%B5es_de_teste)** que podem ser usados para simular o pagamento neste exemplo e um guia sobre como criar **[usuários de teste](https://www.mercadopago.com/developers/pt/guides/online-payments/checkout-api/testing#bookmark_como_criar_usu%C3%A1rios)**.
 
-## :bookmark: License
+## :bookmark: Licença
 
 MIT License. Copyright (c) 2021 - Mercado Pago <br/>
-For more information, see the [LICENSE](LICENSE) file.
+Para mais informações, consulte o arquivo [LICENSE](LICENSE).
