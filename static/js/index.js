@@ -198,7 +198,6 @@ function updatePrice() {
    document.getElementById("summary-quantity").innerText = quantity;
    document.getElementById("summary-total").innerText = amount.toLocaleString("pt-br", { style: "currency", currency: "brl" });
    document.getElementById("amount").value = amount;
-   console.log(amount);
 }
 
 document.getElementById("quantity").addEventListener("change", updatePrice);

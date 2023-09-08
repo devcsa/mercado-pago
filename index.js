@@ -90,7 +90,7 @@ function validateError(error) {
    return { errorMessage, errorStatus };
 }
 
-app.listen(8080, () => {
-   console.log("Servidor rodando na porta: 8080");
-   open("http://localhost:8080");
+app.listen(3000, () => {
+   console.log("Servidor rodando na porta: 3000");
+   open("http://localhost:3000");
 });
