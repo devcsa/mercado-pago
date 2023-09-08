@@ -62,7 +62,7 @@ function loadCardForm() {
       callbacks: {
          onFormMounted: (error) => {
             if (error) return console.warn("Form Mounted handling error: ", error);
-            console.log("Form mounted");
+            //console.log("Form mounted");
          },
          onSubmit: (event) => {
             event.preventDefault();
@@ -115,7 +115,7 @@ function loadCardForm() {
                });
          },
          onFetching: (resource) => {
-            console.log("Fetching resource: ", resource);
+            //console.log("Fetching resource: ", resource);
             payButton.setAttribute("disabled", true);
             return () => {
                payButton.removeAttribute("disabled");

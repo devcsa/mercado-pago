@@ -1,8 +1,5 @@
 require("dotenv").config();
 
-// console.log("PUBLIC KEY", process.env.MERCADO_PAGO_SAMPLE_PUBLIC_KEY);
-// console.log("ACCESS TOKEN", process.env.MERCADO_PAGO_SAMPLE_ACCESS_TOKEN);
-
 const open = require("open");
 const path = require("path");
 const express = require("express");
